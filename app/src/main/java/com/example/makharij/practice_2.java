@@ -21,9 +21,13 @@ public class practice_2 extends AppCompatActivity {
         ImageView img;
         img = (ImageView) findViewById(R.id.img1);
 
-        if(intValue == R.id.button4){
+        if(intValue == R.id.button16){
             textView.setText(statement);
             img.setImageResource(R.drawable.throat1);
+        }
+        else if(intValue == R.id.button17){
+            textView.setText(statement);
+            img.setImageResource(R.drawable.fullhuroof);
         }
 
     }
