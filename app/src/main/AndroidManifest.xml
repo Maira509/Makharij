@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharij">
         <activity
+            android:name=".practice_2"
+            android:exported="true" />
+        <activity
             android:name=".quiz"
             android:exported="true" />
         <activity
