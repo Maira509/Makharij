@@ -10,29 +10,35 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:text="أ ہ"
+        android:textSize="30dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="50dp"
+        android:text="ع ح"
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toTopOf="parent">
+        android:textSize="30dp"
 
     </Button>
 
     <Button
         android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="50dp"
+        android:textSize="30dp"
+        android:text="غ خ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toEndOf="@+id/button6"
@@ -42,10 +48,12 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="30dp"
+        android:text="ق"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button4"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,9 +63,11 @@
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginStart="60dp"
+        android:textSize="30dp"
+        android:text="ل"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button7"
         app:layout_constraintHorizontal_bias="1.0"
@@ -68,8 +78,11 @@
 
     <Button
         android:id="@+id/button13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        android:text="ن"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button10"
         app:layout_constraintHorizontal_bias="1.0"
@@ -80,9 +93,11 @@
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
+        android:text="ر"
         app:layout_constraintEnd_toEndOf="@+id/button9"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,8 +107,11 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        android:text="ض"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button5"
         app:layout_constraintHorizontal_bias="1.0"
@@ -104,8 +122,11 @@
 
     <Button
         android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        android:text="ج ش ی"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button8"
         app:layout_constraintHorizontal_bias="1.0"
@@ -116,8 +137,10 @@
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="ک"
         android:layout_marginStart="36dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button6"
@@ -128,9 +151,11 @@
     </Button>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
+        android:textSize="30dp"
+        android:text="ب"
         app:layout_constraintEnd_toEndOf="@+id/button17"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button19"
@@ -140,11 +165,13 @@
 
     <Button
         android:id="@+id/button19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:text="باَ بوُ بىِ"
+        android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button15"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.071"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button15">
 
@@ -152,8 +179,11 @@
 
     <Button
         android:id="@+id/button18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+        android:textSize="30dp"
+        android:text="ف"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button16"
         app:layout_constraintHorizontal_bias="1.0"
@@ -164,8 +194,10 @@
 
     <Button
         android:id="@+id/button17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="م ن"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button14"
         app:layout_constraintHorizontal_bias="1.0"
@@ -176,8 +208,10 @@
 
     <Button
         android:id="@+id/button16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+        android:text="ظ ذ ث"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button13"
         app:layout_constraintHorizontal_bias="1.0"
@@ -188,9 +222,11 @@
 
     <Button
         android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
         android:layout_marginTop="30dp"
+        android:text="ت د ط"
         app:layout_constraintEnd_toEndOf="@+id/button11"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/button12"
@@ -200,8 +236,11 @@
 
     <Button
         android:id="@+id/button15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:textSize="30dp"
+
+        android:text="ص ز س"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/button12"
         app:layout_constraintHorizontal_bias="1.0"
