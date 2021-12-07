@@ -2,6 +2,7 @@ package com.example.makharij;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +27,7 @@ public class quiz extends AppCompatActivity {
         TextView txt1 = (TextView) findViewById(R.id.textView5);
 
         txt1.setText(statementArr[index]);
-        index++;
+
         Button button, button2;
         button = (Button) findViewById(R.id.button5);
         button2 = (Button) findViewById(R.id.button6);
@@ -35,22 +36,44 @@ public class quiz extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                radioButton = (RadioButton) findViewById(R.id.radioButton);
-                choice = radioButton.getText().toString();
-               if(AnsArr[index] == choice){
+               if(AnsArr[index] == "True"){
                    count++;
                 }
+                index++;
                if(index <= 1) {
-                    txt1.setText(statementArr[index]);
-                    index++;
-                }
-                if(index > 1){
-                    button.setText("Submit");
 
+                    txt1.setText(statementArr[index]);
+
+                }
+               else
+               {
+                   Intent intent = new Intent(quiz.this, Score.class);
+                intent.putExtra("cnt", count);
+                   startActivity(intent);
+               }
+            }
+        });
+        button2.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                if(AnsArr[index] == "False"){
+                    count++;
+                }
+                index++;
+                if(index <= 1) {
+                    txt1.setText(statementArr[index]);
+
+                }
+                else
+                {
+                    Intent intent = new Intent(quiz.this, Score.class);
+                    intent.putExtra("cnt", count);
+                    startActivity(intent);
                 }
             }
         });
-
 
 
 
