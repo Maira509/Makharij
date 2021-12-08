@@ -1,5 +1,6 @@
 package com.example.makharij;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -23,6 +24,11 @@ public class practice_2 extends AppCompatActivity {
         textView = findViewById(R.id.textView2);
         ImageView img, t2, t3, t4, t5, t6;
         img = (ImageView) findViewById(R.id.img1);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Back");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
 
         if(intValue == R.id.button16){
             statement = "أ ہ End of Throat \n" +
@@ -102,5 +108,10 @@ public class practice_2 extends AppCompatActivity {
             img.setVisibility(View.GONE);
         }
 
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return  true;
     }
 }

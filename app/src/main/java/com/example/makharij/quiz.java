@@ -1,5 +1,6 @@
 package com.example.makharij;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -28,6 +29,10 @@ public class quiz extends AppCompatActivity {
 
         txt1.setText(statementArr[index]);
 
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Back");
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setDisplayShowHomeEnabled(true);
         Button button, button2;
         button = (Button) findViewById(R.id.button5);
         button2 = (Button) findViewById(R.id.button6);
@@ -77,6 +82,11 @@ public class quiz extends AppCompatActivity {
 
 
 
+    }
+    @Override
+    public boolean onSupportNavigateUp(){
+        onBackPressed();
+        return  true;
     }
 
             }

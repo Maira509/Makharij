@@ -1,5 +1,6 @@
 package com.example.makharij;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -20,6 +21,13 @@ public class Activity3 extends AppCompatActivity {
          button4 = (Button) findViewById(R.id.button14);
          button5 = (Button) findViewById(R.id.button18);
          button6 = (Button) findViewById(R.id.button17);
+
+         ActionBar actionBar = getSupportActionBar();
+         actionBar.setTitle("Back");
+         actionBar.setDisplayHomeAsUpEnabled(true);
+         actionBar.setDisplayShowHomeEnabled(true);
+
+
          button1.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
@@ -68,4 +76,11 @@ public class Activity3 extends AppCompatActivity {
          intent.putExtra("btn", buttonx.getId());
          startActivity(intent);
      }
+
+     @Override
+    public boolean onSupportNavigateUp(){
+         onBackPressed();
+         return  true;
+     }
 }
+
